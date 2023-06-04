@@ -1,0 +1,168 @@
+*{
+    font-family: 'Montserrat', Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+    background-color: white;
+}
+
+.navbar-light {
+    background-color: white !important;
+}
+
+.nav-link{
+    text-transform: uppercase;
+}
+
+.nav-link:hover, .active{
+    color: #F09138!important;
+    border-bottom: 2px solid #F09138;
+  }
+
+nav{
+    box-shadow: 20px 20px 60px #c6c1c1, -20px -20px 60px #ffffff;
+}
+@media screen and (max-width: 1024px){
+main, footer, header nav {
+    padding: 5px 5%!important;
+}}
+
+header{
+    padding-bottom: 20px;
+}
+
+
+.color-orange{
+    color: #F09138;
+}
+
+.orange-button{
+    border: solid;
+    background: orange;
+    color: white;
+}
+
+.form:active{
+    border: #F09138;
+}
+
+.input{
+    border: none;
+}
+
+
+a{
+    text-decoration: none!important;
+    color: #F09138;
+}
+strong{
+    color: #F09138;
+}
+
+i{
+    color: #F09138;
+
+}
+
+h2{
+    color: #F09138;
+
+}
+
+.form-floating{
+    margin: 10px;
+}
+
+@keyframes dance {
+    0% {
+      transform: rotate(0deg);}
+    100%{
+        transform: rotate(360deg);
+    }
+
+  }
+
+.sandwich {
+    position: relative;
+    /* transform: translate(-50%, -50%); */
+    animation: dance 3s reverse linear infinite;
+  }
+
+#sandwichAnimation {
+    position: absolute;
+    animation: linear infinite;
+    animation-name: run;
+    animation-duration: 10s;
+}
+@keyframes run {
+0% {
+    left: 0;
+}
+48% {
+    -webkit-transform: rotateY(0deg); 
+}
+50% { 
+    left: calc(100% - 200px - 3rem);
+    -webkit-transform: rotateY(180deg); 
+}
+98% {
+    -webkit-transform: rotateY(180deg); 
+}
+100% {
+    left: 0;    
+    -webkit-transform: rotateY(0deg);
+}
+}
+
+.form-control:focus {
+    border-color: #fb9331;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #F09138;
+  }
+
+
+#carouselTeams{
+    display: table;
+    height: 100%;
+}
+
+#carouselEnvironment{
+    display: table;
+    height: 100%;
+}
+
+#carouselImg{
+    width: 300px;
+    height: 400px;
+    display: inline;
+    vertical-align: middle;
+
+}
+
+hr{
+    display: flex;
+    border: 2px solid rgb(240, 145, 56, 1);
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.float-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 30px!important;
+
+}  
+
